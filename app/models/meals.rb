@@ -1,6 +1,6 @@
 class Meals < ActiveRecord::Base
   
-  attr_accessible :category, :description, :photo, :price
+  attr_accessible :category, :description, :photo, :price, :title
 
   validates :category, :presence => true
   validates :description, :presence => true
