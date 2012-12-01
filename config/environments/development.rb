@@ -1,4 +1,7 @@
 ProjectFood::Application.configure do
+  
+  ENV['SINGLY_ID'] = "4ebd602357a7adbe5faa8596daadd597"
+  ENV['SINGLY_SECRET'] = "0b38de08a9c468f95b27279ca31734f7"
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
