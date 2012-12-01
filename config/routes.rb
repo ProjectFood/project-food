@@ -1,10 +1,8 @@
 ProjectFood::Application.routes.draw do
 
-resources :users do 
-  resources :meals
-end
+resources :meals
 
-root :to => 'users#index'
+root :to => 'meals#index'
 
 
 end
