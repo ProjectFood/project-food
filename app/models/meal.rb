@@ -1,4 +1,4 @@
-class Meals < ActiveRecord::Base
+class Meal < ActiveRecord::Base
   
   attr_accessible :category, :description, :photo, :price, :title
 
