@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20121202001438) do
+=======
 ActiveRecord::Schema.define(:version => 20121202030256) do
+>>>>>>> master
 
   create_table "meals", :force => true do |t|
     t.string   "category"
