@@ -8,8 +8,6 @@ match 'signout', to: 'sessions#destroy', as: 'signout'
 # match "auth/:service/callback" => "auth#callback"
 # match "logout"                 => "auth#logout"
 
-resources :users do
-
 resources :meals, only: [:index, :show]
 
 resources :users, except: [:index] do
