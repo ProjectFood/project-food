@@ -7,5 +7,16 @@ class MealsController < ApplicationController
     
   end
 
+  def new 
+    @meal = Meal.new
+  end
+
+  def create
+    @meal = Meal.new(params[:poll])
+    if @poll.save
+      redirect_to :back
+    end
+  end
+
 
 end
