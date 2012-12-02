@@ -11,18 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121201213927) do
+ActiveRecord::Schema.define(:version => 20121202030256) do
 
   create_table "meals", :force => true do |t|
     t.string   "category"
     t.string   "description"
     t.string   "photo"
     t.string   "title"
-    t.float    "price"
+    t.decimal  "price",       :precision => 8, :scale => 2
     t.integer  "user_id"
-    t.integer  "review_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
+    t.integer  "portion"
   end
 
   create_table "users", :force => true do |t|
