@@ -17,7 +17,7 @@ FactoryGirl.define do
   factory :meal do
     sequence(:title)         { |n| "title#{n}"       }
     sequence(:description)   { |n| "description#{n}" }
-    sequence(:price)         { |n| "#{n}.#{n}#{n}"   }
+    sequence(:price)         { |n| "#{n}"            }
     sequence(:portion)       { |n| n.to_i            }
     sequence(:category)      { |n| "Entree"          }
     photo                    'https://www.filepicker.io/api/file/ZGasuGPiQ5KTvQvVCmnF'
