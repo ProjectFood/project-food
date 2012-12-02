@@ -1,0 +1,12 @@
+<%= form_for [@user, Meal.new] do |f| %>
+  <div class="field">
+    <%= f.text_area :title, rows: 2, class: 'span8' %>
+  </div>
+      <div class="actions">
+      <% if already_answered(@question) %>
+        You have now voted or already voted.
+      <% else %>
+        <%= f.submit class: 'btn' %>
+      <% end %>
+    </div>
+<% end %>
