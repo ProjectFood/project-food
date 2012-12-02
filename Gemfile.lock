@@ -39,9 +39,7 @@ GEM
     coffee-script-source (1.4.0)
     commonjs (0.2.6)
     daemons (1.1.9)
-
     dynamic_form (1.1.4)
-
     erubis (2.7.0)
     eventmachine (1.0.0)
     execjs (1.4.0)
@@ -164,7 +162,6 @@ DEPENDENCIES
   jquery-rails
   json
   less-rails
-  middleman
   omniauth-singly
   quiet_assets
   rails (= 3.2.9)

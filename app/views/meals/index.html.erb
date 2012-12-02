@@ -3,15 +3,17 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script src="/path/to/jquery.masonry.min.js"></script>
 <div id="container">
-  <div class="item">Entrees</div>
+  <% @meals.each do |meal| %>
+  <div class="item">
+  <%= meal.title %><br>
+  <%= meal.category %><br>
+  <%= filepicker_image_tag meal.photo, w: 30, h: 30, fit: 'clip' %>
+  </div>
+<% end %>
   <div class="item">Lunch</div>
   <div class="item">Baked Goods</div>
 </div>
 
 
-<% @meals.each do |meal| %>
-  <%= meal.title %><br>
-  <%= meal.category %><br>
-  <%= filepicker_image_tag meal.photo, w: 30, h: 30, fit: 'clip' %>
-<% end %>
+
 
