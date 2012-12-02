@@ -47,9 +47,15 @@
           <a class="brand" href="#">ProjectFood</a>
           <div class="container nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+		      <% if current_user %>
+		          <li class="active"><a href="/users/<%=current_user.id%>/teams">My Team</a></li>
+				  <li>Signed in as<%= current_user %>
+		          <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+		      <% else %>
+             	 <li><%= link_to "Link1", "/path1"  %></li>
+	              <li><%= link_to "Sign In With Twitter", "/auth/singly?service=twitter"  %></li>
+	              <li><%= link_to "Sign In With Facebook", "/auth/singly?service=facebook"  %></li>
+			  <% end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
