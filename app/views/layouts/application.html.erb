@@ -33,6 +33,7 @@
     <!-- For all other devices -->
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'images/favicon.ico', :rel => 'shortcut icon' %>
+    <%= filepicker_js_include_tag %>
   </head>
   <body>
 
@@ -50,6 +51,15 @@
                <li><%= button_to "Sign in", "/path1", :class => 'btn btn-large btn-primary'  %></li>
                <li><%= button_to "Sign up!", "/path2", :class => 'btn btn-large btn-primary'  %></li> 
               <li><%= link_to "My Account", "/path3"  %></li>
+		      <% if current_user %>
+		          <li class="active"><a href="/users/<%=current_user.id%>/teams">My Team</a></li>
+				  <li>Signed in as<%= current_user %>
+		          <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
+		      <% else %>
+             	 <li><%= link_to "Link1", "/path1"  %></li>
+	              <li><%= link_to "Sign In With Twitter", "/auth/singly?service=twitter"  %></li>
+	              <li><%= link_to "Sign In With Facebook", "/auth/singly?service=facebook"  %></li>
+			  <% end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -60,7 +70,7 @@
          
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; Project Food 2012</p>
       </footer>
 
     </div> <!-- /container -->

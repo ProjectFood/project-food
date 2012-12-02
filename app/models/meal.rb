@@ -1,29 +1,11 @@
-class Meal < ActiveRecord::Base
-  
-  attr_accessible :category, :description, :photo, :price, :title
+class Meal < ActiveRecord::Base 
+  attr_accessible :category, :description, :photo, :price, :title, :portion
+  validates_presence_of :category, :description, :photo, :price, :user_id
+  validates :portion, numericality: true
+  validates :category, :inclusion => { :in => %w(Breakfast Entree Dessert) }
+  belongs_to :user
 
-  validates :category, :presence => true
-  validates :description, :presence => true
-  validates :photo, :presence => true
-  validates :price, :presence => true, :numericality => true
-  validates :user_id, :presence => true, :numericality => true
-  validates :review_id, :presence => true, :numericality => true
-  
-  belongs_to :cook
-  
-  has_many :reviews
+  def correct_price? #validation for 2 decimals in price max?
+    # if self.price =~ /d{1,}
+  end
 end
-
-# 
-# create_table :meals do |t|
-#    t.string :category
-#    t.string :description
-#    t.string :photo
-#    t.float :price
-#    t.integer :user_id
-#    t.integer :review_id
-# 
-#    t.timestamps
-
-####Add title separate from description? Title sufficient for standard items not requiring description, can add description if need to give ingredients, etc.
-####
