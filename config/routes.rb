@@ -10,10 +10,6 @@ end
 
 resources :sessions
 
-resources :users do 
-  resources :meals
-end
-
 root :to => 'meals#index'
 
 end
