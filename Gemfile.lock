@@ -39,12 +39,22 @@ GEM
     coffee-script-source (1.4.0)
     commonjs (0.2.6)
     daemons (1.1.9)
+
+    dynamic_form (1.1.4)
+
     erubis (2.7.0)
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (4.1.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.1.0)
+      factory_girl (~> 4.1.0)
+      railties (>= 3.0.0)
     faraday (0.8.4)
       multipart-post (~> 1.1)
+    filepicker-rails (0.0.2)
+      railties (>= 3.1.0, < 5.0)
     hashie (1.2.0)
     hike (1.2.1)
     httpauth (0.2.0)
@@ -85,6 +95,8 @@ GEM
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
     polyglot (0.3.3)
+    quiet_assets (1.0.1)
+      railties (~> 3.1)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -146,14 +158,19 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  dynamic_form
+  factory_girl_rails (~> 4.0)
+  filepicker-rails
   jquery-rails
   json
   less-rails
   middleman
   omniauth-singly
+  quiet_assets
   rails (= 3.2.9)
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
+  thin
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
