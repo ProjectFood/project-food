@@ -1,12 +1,20 @@
-<%= form_for [@user, Meal.new] do |f| %>
-  <div class="field">
-    <%= f.text_area :title, rows: 2, class: 'span8' %>
-  </div>
-      <div class="actions">
-      <% if already_answered(@question) %>
-        You have now voted or already voted.
-      <% else %>
-        <%= f.submit class: 'btn' %>
-      <% end %>
-    </div>
+
+<%= form_for [@user, @meal] do |f| %>
+  <%= f.error_messages %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <%= f.label :portion, 'How many portions can you make?' %>
+  <%= f.number_field :portion, value: 1, :min => 1 %>
+  <%= f.label :category %>
+  <%= f.check_box :category, {}, 0, 'Breakfast' %> Breakfast
+  <%= f.check_box :category, {}, 0, 'Entree' %> Entree
+  <%= f.check_box :category, {}, 0, 'Dessert' %> Dessert
+  <%= f.label :photo, 'Upload a picture of your meal!' %>
+  <%= f.filepicker_field :photo, button_text: 'Choose Your Photo' %>
+  <%= f.submit %>
 <% end %>
+

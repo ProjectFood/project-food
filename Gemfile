@@ -12,7 +12,10 @@ gem "middleman"
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
-
+gem 'filepicker-rails'
+gem 'quiet_assets'
+gem 'thin'
+gem 'dynamic_form'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -24,6 +27,10 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 gem 'jquery-rails'
