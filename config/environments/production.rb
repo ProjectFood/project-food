@@ -1,6 +1,7 @@
 ProjectFood::Application.configure do
-  ENV["CONSUMER_KEY"] = "tzNVwVC1yt2Ep0LGtOzEBA"
-  ENV["CONSUMER_SECRET"] = "dCkVfLOExABEqM9xgyNyqilOukNgaZeikH0xJnkO8c"
+
+  ENV['FACEBOOK_APP_ID'] = '492233654133029'
+  ENV['FACEBOOK_SECRET'] = 'd25bd96e22776d1f702a4e64f23200de'
   
   # Settings specified here will take precedence over those in config/application.rb
 
