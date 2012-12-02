@@ -1,6 +1,6 @@
 ProjectFood::Application.configure do
-  ENV["CONSUMER_KEY"] = "Q6SLjinSezMleJv2wXB5HQ"
-  ENV["CONSUMER_SECRET"] = "fh1NsiCV6SRJ68IipI3nTAf3DIjLilL0fuUgwG6730"
+  ENV["CONSUMER_KEY"] = "tzNVwVC1yt2Ep0LGtOzEBA"
+  ENV["CONSUMER_SECRET"] = "dCkVfLOExABEqM9xgyNyqilOukNgaZeikH0xJnkO8c"
   
   # Settings specified here will take precedence over those in config/application.rb
 
