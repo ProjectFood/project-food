@@ -16,7 +16,7 @@ FactoryGirl.define do
 
   factory :meal do
     sequence(:title)         { |n| "title#{n}"       }
-    sequence(:description)   { |n| "description#{n}" }
+    sequence(:description)   { |n| Faker::Lorem.paragraph(1) }
     sequence(:price)         { |n| "#{n}.#{n}#{n}"   }
     sequence(:portion)       { |n| n.to_i            }
     sequence(:category)      { |n| "Entree"          }
