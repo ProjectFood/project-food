@@ -34,7 +34,7 @@ group :development do
 end
 
 gem 'jquery-rails'
-gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 gem 'httparty'
 
 # To use ActiveModel has_secure_password
