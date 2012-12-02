@@ -35,6 +35,7 @@ li {
 	margin-right: 30px !important;
 }
 
-footer {
-	background-color: blue;
+#footer {
+	margin-top: 30px;
+	border-top: 1px solid;
 }

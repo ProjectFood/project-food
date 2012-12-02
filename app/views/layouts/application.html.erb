@@ -67,19 +67,14 @@
     </div>
 
     <div class="container">
-<<<<<<< HEAD
-         
-
-=======
         <div class="row">
           <div class="span9">
              <%= yield %>
           </div>
-            
->>>>>>> 342c369f8aabf3d78b18dd8fad7509f2de90a52d
-      <footer>
-        <p>&copy; Project Food 2012</p>
-      </footer>
+      
+      <!-- <footer>
+      <div id="footer">  <p>&copy; Project Food 2012</p> </div>
+      </footer> -->
 
     </div> <!-- /container -->
 
@@ -89,4 +84,17 @@
     <%= javascript_include_tag "application" %>
 
   </body>
+
+
+  <footer>
+      <div id="footer">  
+        <div id="footer_nav">
+                <li><%= link_to "Home", "#"  %></li>
+                <li><%= link_to "About", "#"  %></li>
+                <li><%= link_to "FAQ", "#"  %></li>
+                <li><%= link_to "Contact", "#"  %></li>
+        </div> 
+        <p>&copy; Project Food 2012</p>
+      </div>
+  </footer>
 </html>
