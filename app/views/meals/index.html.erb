@@ -5,16 +5,12 @@
 <div id="container">
   <% @meals.each do |meal| %>
   <div class="item">
-  <%= meal.title %><br>
-  <%= meal.category %><br>
-  <%= filepicker_image_tag meal.photo, w: 30, h: 30, fit: 'clip' %>
+    <div class id="<%meal.category %>">
+      <%= filepicker_image_tag meal.photo, w: 30, h: 30, fit: 'clip' %><br>
+      <%= meal.title %>
+    </div>
   </div>
 <% end %>
-
-  <div class="item">Entrees</div>
->>>>>>> f658119f7c326edd9029736e5627c02ac915b542
-  <div class="item">Lunch</div>
-  <div class="item">Baked Goods</div>
 </div>
 
 
