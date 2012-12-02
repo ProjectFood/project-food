@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+
+
+.navbar  {
+	line-height: 80px !important;
+	position: relative !important;
+	background-color: blue !important;
+}
+      
+
+.brand {
+ 	font-size: 36px !important;
+ 	color: #008080 !important;
+ }
+
+.nav {
+	float: right !important;
+	margin-top: 30px !important;
+
+}
+
+li {
+	margin-right: 30px !important;
+}
