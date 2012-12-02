@@ -6,6 +6,7 @@ match 'signout', to: 'sessions#destroy', as: 'signout'
 
 resources :meals
 resources :sessions
+resources :users
 
 root :to => 'meals#index'
 
