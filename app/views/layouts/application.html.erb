@@ -51,7 +51,7 @@
           <div class="container nav-collapse">
             <ul class="nav">
 		      <% if current_user %>
-		          <li class="active"><a href="/users/<%=current_user.id%>/teams">My Team</a></li>
+		          <li class="active"><a href="/users/<%=current_user.id%>/meals">My Meals</a></li>
 				  <li><%= link_to "Signed in as #{current_user.name}", "#" %></li>
 		          <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
 		      <% else %>
