@@ -9,7 +9,7 @@ class Meal < ActiveRecord::Base
   validates :user_id, :presence => true, :numericality => true
   validates :review_id, :presence => true, :numericality => true
   
-  belongs_to :cook
+  belongs_to :user
   
   has_many :reviews
 end
