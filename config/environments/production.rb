@@ -1,6 +1,6 @@
 ProjectFood::Application.configure do
-  ENV['SINGLY_ID'] = "4ebd602357a7adbe5faa8596daadd597"
-  ENV['SINGLY_SECRET'] = "0b38de08a9c468f95b27279ca31734f7"
+  ENV["CONSUMER_KEY"]  = "Q6SLjinSezMleJv2wXB5HQ"
+  ENV["CONSUMER_SECRET"] = "fh1NsiCV6SRJ68IipI3nTAf3DIjLilL0fuUgwG6730"
   
   # Settings specified here will take precedence over those in config/application.rb
 
