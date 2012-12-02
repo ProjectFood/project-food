@@ -53,7 +53,7 @@
 				  <li>Signed in as<%= current_user %>
 		          <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
 		      <% else %>
-             	 <li><%= link_to "Link1", "/path1"  %></li>
+             	 <li><%= link_to "My account", "/users/user.id"  %></li>
 	              <li><%= link_to "Sign In With Twitter", "/auth/singly?service=twitter"  %></li>
 	              <li><%= link_to "Sign In With Facebook", "/auth/singly?service=facebook"  %></li>
 			  <% end %>
@@ -68,19 +68,7 @@
           <div class="span9">
              <%= yield %>
           </div>
-          <div class="span3">
-            <div class="well sidebar-nav">
-              <h3>Sidebar</h3>
-              <ul class="nav nav-list">
-                <li class="nav-header">Sidebar</li>
-                <li><%= link_to "Link1", "/path1"  %></li>
-                <li><%= link_to "Link2", "/path2"  %></li>
-                <li><%= link_to "Link3", "/path3"  %></li>
-              </ul>
-            </div><!--/.well -->
-          </div><!--/span-->
-        </div><!--/row-->
-
+            
       <footer>
         <p>&copy; Company 2012</p>
       </footer>
