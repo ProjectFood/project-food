@@ -1,6 +1,11 @@
 class MealsController < ApplicationController
   def index
-    @meals = Meal.all
+    if params[:user_id]
+      @user = User.find(params[:user_id])
+      @meals = @user.meals
+    else
+      @meals = Meal.all
+    end
   end
 
   def show
