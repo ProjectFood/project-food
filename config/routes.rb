@@ -1,12 +1,14 @@
 ProjectFood::Application.routes.draw do
 
-match 'auth/:provider/callback', to: 'sessions#create'
+match 'auth/:singly/callback', to: 'sessions#create'
 match 'auth/failure', to: redirect('/')
 match 'signout', to: 'sessions#destroy', as: 'signout'
 
-resources :meals
+resources :users do
+  resources :meals
+end
+
 resources :sessions
-resources :users
 
 root :to => 'meals#index'
 
