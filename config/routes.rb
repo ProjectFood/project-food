@@ -4,7 +4,9 @@ match 'auth/:singly/callback', to: 'sessions#create'
 match 'auth/failure', to: redirect('/')
 match 'signout', to: 'sessions#destroy', as: 'signout'
 
-resources :users do
+resources :meals, only: [:index, :show]
+
+resources :users, except: [:index] do
   resources :meals
 end
 
