@@ -15,7 +15,11 @@
 ActiveRecord::Schema.define(:version => 20121202001438) do
 =======
 ActiveRecord::Schema.define(:version => 20121202030256) do
+<<<<<<< HEAD
 >>>>>>> 2cce9408a613095eb36ed01099c824c2e59e7db4
+=======
+>>>>>>> master
+>>>>>>> eaf6743f31a442c902dcb553db1723a51f2686c6
 
   create_table "meals", :force => true do |t|
     t.string   "category"
