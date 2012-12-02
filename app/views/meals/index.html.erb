@@ -1,7 +1,16 @@
 <h2>Meals</h2>
 
-<% @meals.each do |meal| %>
-  <%= meal.title %><br>
-  <%= meal.category %><br>
-  <%= filepicker_image_tag meal.photo, w: 30, h: 30, fit: 'clip' %>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script src="/path/to/jquery.masonry.min.js"></script>
+<div id="container">
+  <% @meals.each do |meal| %>
+  <div class="item">
+    <div class id="<%meal.category %>">
+      <%= filepicker_image_tag meal.photo, w: 30, h: 30, fit: 'clip' %><br>
+      <%= meal.title %>
+    </div>
+  </div>
 <% end %>
+</div>
+
+

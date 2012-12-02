@@ -56,7 +56,7 @@
 				  <li>Signed in as<%= current_user %>
 		          <li><%= link_to "Sign out", signout_path, id: "sign_out" %></li>
 		      <% else %>
-             	 <li><%= link_to "Link1", "/path1"  %></li>
+             	 <li><%= link_to "My account", "/users/user.id"  %></li>
 	              <li><%= link_to "Sign In With Twitter", "/auth/singly?service=twitter"  %></li>
 	              <li><%= link_to "Sign In With Facebook", "/auth/singly?service=facebook"  %></li>
 			  <% end %>
@@ -67,8 +67,16 @@
     </div>
 
     <div class="container">
+<<<<<<< HEAD
          
 
+=======
+        <div class="row">
+          <div class="span9">
+             <%= yield %>
+          </div>
+            
+>>>>>>> 342c369f8aabf3d78b18dd8fad7509f2de90a52d
       <footer>
         <p>&copy; Project Food 2012</p>
       </footer>
