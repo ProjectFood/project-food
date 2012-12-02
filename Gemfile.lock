@@ -49,6 +49,11 @@ GEM
     factory_girl_rails (4.1.0)
       factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
+<<<<<<< HEAD
+=======
+    faker (1.1.2)
+      i18n (~> 0.5)
+>>>>>>> master
     faraday (0.8.4)
       multipart-post (~> 1.1)
     filepicker-rails (0.0.2)
@@ -161,6 +166,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   dynamic_form
   factory_girl_rails (~> 4.0)
+  faker
   filepicker-rails
   httparty
   jquery-rails

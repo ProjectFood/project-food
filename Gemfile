@@ -29,8 +29,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development do
+group :test, :development do
   gem "factory_girl_rails", "~> 4.0"
+  gem 'faker'
 end
 
 gem 'jquery-rails'
