@@ -1,3 +1,4 @@
+
 <%= form_for [@user, @meal] do |f| %>
   <%= f.error_messages %>
   <%= f.label :title %>
@@ -16,3 +17,4 @@
   <%= f.filepicker_field :photo, button_text: 'Choose Your Photo' %>
   <%= f.submit %>
 <% end %>
+

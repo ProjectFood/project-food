@@ -160,6 +160,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   filepicker-rails
   jquery-rails
+  json
   less-rails
   omniauth-singly
   quiet_assets
