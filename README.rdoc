@@ -1,3 +1,3 @@
 Project Food is an Angel Hack product created by students of Dev Bootcamp on Dec. 1, 2012 at Paypal's office in San Jose, CA.  Project Food allows anyone who cooks food to make extra portions and sell it to other hungry Project Food users.  Registered cooks can posts a meal they're cooking, how many portions are available, and how much it costs.  Hungry users will see available meals based on their location.  
 
-Team Members: Kunal Bhatt, Brian Lee, Tom Uebel, Scott Chiang, Jonathan Lue
+Team Members: Kunal Bhatt, Brian Lee, Tom Uebel, Scott Chiang, and Jonathan Lue
