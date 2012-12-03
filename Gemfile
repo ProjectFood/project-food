@@ -37,6 +37,7 @@ end
 gem 'jquery-rails'
 gem 'omniauth-facebook'
 gem 'httparty'
+gem 'newrelic_rpm'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
