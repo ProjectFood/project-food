@@ -1,18 +1,10 @@
 <h2>Meals</h2>
 
 <ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#home">Home</a></li>
-  <li><a href="#profile">Profile</a></li>
-  <li><a href="#messages">Messages</a></li>
-  <li><a href="#settings">Settings</a></li>
+  <li class="active"><a href="#home">Lunch</a></li>
+  <li><a href="#profile">Dinner</a></li>
 </ul>
  
-<div class="tab-content">
-  <div class="tab-pane active" id="home">...</div>
-  <div class="tab-pane" id="profile">...</div>
-  <div class="tab-pane" id="messages">...</div>
-  <div class="tab-pane" id="settings">...</div>
-</div>
 
 <div class="span10" id="container">
   <% @meals.each do |meal| %>
@@ -24,6 +16,9 @@
         </div>
         <div class="meal-description">
           <%= meal.description %>....
+        </div>
+        <div>
+          <%=link_to 'Buy', root_path, :class => "btn"%>
         </div>
     </div>
   </div>
