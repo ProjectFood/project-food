@@ -16,6 +16,9 @@ gem 'filepicker-rails'
 gem 'quiet_assets'
 gem 'thin'
 gem 'dynamic_form'
+gem 'acts_as_shopping_cart', '~> 0.1.4'
+gem 'stripe'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

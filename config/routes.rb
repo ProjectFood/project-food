@@ -12,6 +12,7 @@ resources :meals, only: [:index, :show]
 
 resources :users, except: [:index] do
   resources :meals
+  resource :shopping_cart, only: [:create, :show]
 end
 
 resources :sessions
